@@ -25,16 +25,18 @@ const user = {
 function App() {
   return (
     <div className="App">
-      {}
       <div className="user-deets">
         <img src={user.avatar} alt="some"></img>
-        <h3 className="imagecolor">{user.name}</h3>
-        <div>location</div>
-        <div>{user.location}</div>
-        <div>Eats</div>
-        <div>{user.foodType}</div>
-        <div>Likes</div>
-        <div>{user.likes}</div>
+        <h3>{user.name}</h3>
+        <p>
+          <strong>location</strong> {user.location}
+        </p>
+        <p>
+          <strong>Eats</strong> {user.foodType}
+        </p>
+        <p>
+          <strong>Likes</strong> {user.likes}
+        </p>
         <div>Twitter</div>
         <div className="imagecolor">@{user.twitterUsername}</div>
       </div>
